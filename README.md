@@ -26,7 +26,7 @@ sc.nextLine(); //To read Strings.
 ## Big Integer Class in java 
 > There are many built in Math functions, which will make our work easy.
 
-** Library **
+**Library**
 ```
 import java.math.*;
 ```
