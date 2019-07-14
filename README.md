@@ -31,11 +31,11 @@ sc.nextLine(); //To read Strings.
 import java.math.*;
 ```
 
-Basic Syntax 
+**Basic Syntax**
 ```
 BigInteger bi= new Big Integer("String which contains Integer(s)");
 ```
-Functions 
+**Functions**
 ```
 bi.multiply(bigintegervar)
 bi.Add()  //This will Return Value BI is Immutable 
@@ -53,5 +53,181 @@ bi.Equals(bi2)
 bi.compareTo(bi2)
 bi.abs() //Absolute Value.
 ```
+[Lear more about Big Integer](https://www.geeksforgeeks.org/biginteger-class-in-java/)
 
+## Big Integer Usecases 
 
+**Easily Check that Number is Prime or not :**
+```
+ BigInteger bi = new BigInteger("1652")
+	bi.isProbablePrime(1) //This Will Return True Or False.
+	BigInteger.valueOf(1235) //Direct method
+```
+
+**Get Next Prime Easily :**
+```
+ BigInteger bi= new BigInteger("5");
+	BIgInteger b2=bi.nextProbablePrime(); //Return BigInteger
+```
+
+**Get GCD of Two Numbers Easily :**
+```
+ BigInteger b1=new BigInteger("165");
+	BigInteger b2=new BigInteger("465");
+	BigInteger b3=b1.gcd(b2); //Return BigInteger
+```
+
+**ConvertTo Any Other Data Type :**
+```
+ BigInteger bi=new BigInteger("5532");
+	int a=bi.intValue(); //Replace int with any other Data Type toString() is there as well !
+ // Side Note : For Comparing use compareTo() and equals() Functions.
+```
+
+**Work with Bits Easily :**
+```
+ BigInteger bi=new BigInteger("5532");
+ int length=bi.bitLength() //to Get Length.
+	BigInteger changedvalue = flipBit(index) //to Flip the Bit at specific posssition in a number
+	BigInteger changedvalue = shiftLeft(n) //this<<n and shiftRight(n) this>>n For shifting Bits.
+```
+
+**Artihmatic Functions :**
+```
+BigInteger a=new BigInteger("10");
+BigInteger b=new BigInteger("10");
+
+//Addition
+BigInteger c=a.add(b);
+
+//Other Functions
+multiply() //a*b
+add() //a+b
+divide() //a/b
+subtract() //a-b
+mod() //a%b
+modInverse() //b%a
+not() //!a
+pow() //a**2 
+and() //a&b
+xor() //a^b
+```
+
+**For LCD in BigInteger :**
+> Just Multiply Both the Numbers and divide that with GCD of Numbers (Use GCD Function).
+
+## Other Tricks
+
+**Quicky Convert to Binary/Octal/Hex:**
+```
+ //use toString function of Integer
+	//Example: 
+ int n=1500;
+ String temp=Integer.toString(n,2) //here n is a variable of int and 2 is for Binary (8 for octal and 16 for hex)
+ //This will return string..
+
+```
+
+**If Else in System Out Print :**
+```
+ in System Out Print :
+	System.out.println((a==0) ? "Yes it is" : "Nope! You are Wrong ");
+	return (x==0) //In Return Statements As well.
+```
+
+ **Different way of doing Multiplication and Division :**
+ ```
+ int a =10;
+	a= a << 1; //Mutiply by 2
+	a= a >> 1; //Division By 2
+ ```
+ 
+ **Swapping using Xor:**
+ ```
+ a ^= b;
+	b ^= a;
+	a ^= b;
+ ```
+ 
+ **To Find total Number of Digits Directly :**
+ ```
+ int N=453;
+	int x=(int)Math.log(N)+1;
+ ```
+ 
+ **Quickly check whather no is power of 2 or not via function :**
+ ```
+ function checkPowerOf2(int n)
+ {
+     return (x!=0) && (x&(x-1)==0);
+ }
+ ```
+ 
+ **For Each loop in java :**
+ ```
+ for (int a: Arr_var)
+	{
+		//Code.
+	}
+ ```
+ 
+ **Split the String Input using ShorCut method:**
+ ```
+ String strr[] = String/BufferedReader.readLine().split("AnyToken"); //As this will return String Array so no worries Just Acces that using index Like : sttr[0]
+
+ ```
+ 
+ **Convert String To CharArray:**
+ ```
+ char Arr[]= str.toCharArray();
+ ```
+ 
+ **String Replace:**
+ ```
+ str.replace("" , "");
+ ```
+ 
+ **Fill Array with a no.**
+ ```
+ int arr[]=new int[100];
+ int value=15;
+ Arrays.fill(arr,value);
+ ```
+ 
+ ## Sorting
+ **Sorting Function:**
+ ```
+ Arrays.sort(arr); //This Method uses QuickSort Algo !! 
+	//Complexity : O(nlogn);
+ ``` 
+ 
+ **Sort SubArray :**
+ ```
+ Arrays.sort(arr,starting,ending); 
+ ```
+ 
+ **Reverse Order Sorting:**
+ ```
+ Arrays.sort(arr,Collections.reverseOrder);
+ ```
+ 
+ ## Searching :
+ 
+ **For Sorted Array use Binray Search :**
+ ```
+ Arrays.binarySearch(arr,var_to_search);
+	ArraysbinarySearch(arr,start,end,var) //Within the Range..
+ ```
+ 
+ **String.indexof() function Usecases :**
+>We Can search Character and string As wel in String.indexOf() Method and We can also Specify the Starting Element..
+>We can also use this fucction on Substring Search..
+```
+//We Can search Character and string As wel in String.indexOf() Method and We can also Specify the Starting Element..
+//We can also use this fucction on Substring Search..
+ 
+String.index(char/String, Start_Var_int);
+
+ ```
+ 
+ 
