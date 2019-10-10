@@ -95,7 +95,7 @@ BigInteger changedvalue = flipBit(index) //to Flip the Bit at specific posssitio
 BigInteger changedvalue = shiftLeft(n) //this<<n and shiftRight(n) this>>n For shifting Bits.
 ```
 
-**Artihmatic Functions :**
+**Arithmatic Functions :**
 ```
 BigInteger a=new BigInteger("10");
 BigInteger b=new BigInteger("10");
@@ -345,11 +345,22 @@ Math.sqrt() //Square Root
 ```
 
 
-## Random Number Geneartion in Java
+## Random Number Generation in Java
 
 ```
 Random rn=new Random();
 rn.nextFloat() //genrate Float Random Number
 rn.new Int(); //genrate Int Random Number
 rn.new Int(100); // Within Range
+```
+
+
+## Array Methods in java
+
+```
+ length() Method // gives the length of array.
+ toString() //converts your array into a string and can be used to print your array.
+ contains() //searches for array element into the array object from which the method is called.
+ eg: Arrays.asList(arr1).contains("UFT");
+ 
 ```
